@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media #{$minsmall}{
+        width: 767px;
+    }
+    @media#{$minmedium}{
+        width: 992px;
+    }
+    @media #{$minlarge}{
+        width: 1000px;
+    }
+}
+.clear{
+    clear: both;
+}
+.text-center-mobile{
+    @media#{$maxmobile}{
+        text-align: center;
+    }
+}

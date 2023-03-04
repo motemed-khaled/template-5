@@ -1,0 +1,107 @@
+@import "helpers/variabels" ;
+
+$float-left:right;
+$float-right:left;
+
+$text-right: left;
+$text-left: right ;
+.header{
+    .logo{
+        .toggle-menu{
+            right: 80%;
+            top: 22px;
+        }
+        position: relative;
+        width: 30%;
+        float: $float-left;
+       
+        @media #{$minmedium}{
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+        @media #{$maxmobile}{
+            width: 100%;
+        }
+       
+    }
+    .navbar{
+        float: $float-left;
+        @media #{$minmedium}{
+            float: $float-left;
+        }
+        }
+    }
+/*start services*/
+.services{
+        .box{
+            @media #{$minmedium}{
+                float: $float-left;
+            }
+    }
+}
+/*end services*/
+/*start our players*/
+.our-plyers{
+    .player-box{
+        @media #{$minsmall}{
+        float: $float-left;
+      
+        }
+}
+}
+/*end our players*/
+/*stsrt lorem ipsum*/
+.lorem-ipsum{
+    .lorem-box{
+        
+        @media #{$minsmall}{
+        float: $float-left;
+}
+}
+}
+/*end lorem ipsum*/
+.footer{
+    .section-title{
+        color: #444;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .gallary , .info , .contact{
+        float: $float-left;
+    }
+    .gallary{
+        .image-box{
+            img{
+                @media #{$minsmall} {
+                    float: $float-left;
+                }
+            }
+            .text{
+                @media #{$minsmall} {
+                    float: $float-left;
+                }
+            }
+        }
+    }
+  
+    .copyeight{
+        .copytext{
+            @media #{$minsmall}{
+                float: $float-left;
+                width: 50%;
+            }
+        }
+        .author{
+            float: $float-left;
+            width: 50%;
+            text-align: $text-right;
+            @media #{$maxmobile}{
+                text-align: center;
+            }
+            q{
+                color: $red-color;
+            }
+        }
+    }
+}

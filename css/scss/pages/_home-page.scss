@@ -1,0 +1,168 @@
+/*start slider*/
+.slider{
+    q{
+        font: {
+            style:italic;
+            weight:bold;
+            family: tahoma,Arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color:#5e5e5e ;
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+    .image{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(255 255 255 / 20%);
+            @include prefixer(transition , $main-transtion , webkit moz);
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
+        &:hover::before{
+            animation: flash 0.8s;
+            -webkit-animation: flash 0.8s;
+}
+    }
+    img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid $grey-color;
+            background-color: #d1d1d1;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            &.active , &:hover{
+                background-color: white;
+                border: 2px solid #333;
+            }
+}
+    }
+}
+/*end slider*/
+/*start services*/
+.services{
+        .box{
+            @media #{$minmedium}{
+                float: $float-left;
+                width:(100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+            }
+          
+            @media #{$maxmobile}{
+                margin-top: 30px;
+                i{
+                    display: block;
+                    margin-bottom: 15px;
+                }
+            }
+            .serv-title{
+                color: #666;
+                i{
+                    font-size: 35px;
+                    position: relative;
+                    top: 4px;
+                    margin-right: 4px;
+                    transition: $main-transtion;
+                    -webkit-transition: $main-transtion;
+                    -moz-transition: $main-transtion;
+                    -ms-transition: $main-transtion;
+                    -o-transition: $main-transtion;
+                    &:hover{
+                        color: $red-color;
+                    }
+                }
+            }
+           .serv-des{
+            color: #777;
+            line-height: 1.5;
+           }
+    }
+}
+/*end services*/
+/*start our players*/
+.our-plyers{
+    .player-box{
+        @media #{$minsmall}{
+        float: $float-left;
+        width:(100% / 2);
+        margin-bottom: 40px;
+        }
+        @media #{$minmedium }{
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+        @media #{$minlarge}{
+            width:(100% / 4);
+            margin-bottom: 0;
+            }
+        img{
+            max-width: 100%;
+        }
+        .player-title{
+            color: #666;
+            font-size: 15px;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+       .player-des{
+        color: #777;
+        line-height: 1.5;
+       }
+}
+}
+/*end our players*/
+/*stsrt lorem ipsum*/
+.lorem-ipsum{
+    .lorem-box{
+        
+        @media #{$minsmall}{
+        float: $float-left;
+        width: (94% / 3 );
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        }
+        @media #{$maxmobile}{
+           margin-top: 30px;
+            }
+        @include prefixer(transition , $main-transtion , webkit moz);
+      
+        &:hover{
+            filter:grayscale(10) ;
+            -webkit-filter:grayscale(10) ;
+        }
+            .image{
+                width: 300px;
+                border: 3px solid white;
+                outline: 3px solid $red-color;
+            }
+}
+  
+}
+/*end lorem ipsum*/

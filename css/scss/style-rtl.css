@@ -1,0 +1,91 @@
+.header .logo {
+  position: relative;
+  width: 30%;
+  float: right;
+}
+.header .logo .toggle-menu {
+  right: 80%;
+  top: 22px;
+}
+@media (min-width: 992px) {
+  .header .logo {
+    width: 30%;
+    float: right;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .header .logo {
+    width: 100%;
+  }
+}
+.header .navbar {
+  float: right;
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+
+/*start services*/
+@media (min-width: 992px) {
+  .services .box {
+    float: right;
+  }
+}
+
+/*end services*/
+/*start our players*/
+@media (min-width: 768px) {
+  .our-plyers .player-box {
+    float: right;
+  }
+}
+
+/*end our players*/
+/*stsrt lorem ipsum*/
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+  }
+}
+
+/*end lorem ipsum*/
+.footer .section-title {
+  color: #444;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.footer .gallary, .footer .info, .footer .contact {
+  float: right;
+}
+@media (min-width: 768px) {
+  .footer .gallary .image-box img {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallary .image-box .text {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .copyeight .copytext {
+    float: right;
+    width: 50%;
+  }
+}
+.footer .copyeight .author {
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .footer .copyeight .author {
+    text-align: center;
+  }
+}
+.footer .copyeight .author q {
+  color: #e2494c;
+}/*# sourceMappingURL=style-rtl.css.map */

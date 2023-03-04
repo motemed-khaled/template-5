@@ -1,0 +1,91 @@
+.header{
+    padding: 20px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid $grey-color;
+    .logo{
+        position: relative;
+        width: 30%;
+        float: $float-left;
+        @media #{$minsmall}{
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$minmedium}{
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+        @media #{$maxmobile}{
+            width: 100%;
+        }
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        p{
+            color: $grey-color;
+        }
+    }
+    .navbar{
+        width: 70%;
+        float: $float-left;
+        overflow: hidden;
+        background-color: $red-color;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        @media #{$minsmall}{
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+            display: block !important;
+        }
+        @media #{$minmedium}{
+            width: 70%;
+            float: $float-left;
+            margin-top: 1em;
+        }
+        @media #{$maxmobile}{
+            display: none;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+}
+        li{
+            width: 20%;
+            float: $float-left;
+            font-size: 10px;
+            text-align: center;
+            @media #{$maxmobile}{
+                display: block;
+                float: none;
+                width: 50%;
+                margin:10px auto;
+                border: 3px solid $red-color;
+                outline: 3px solid white;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+}
+            a{
+                display: block;
+                padding: 20px 10px;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition:$main-transtion;
+                &:hover   {
+                    color: #eee;
+                    scale: 1.5;
+                }
+            }
+        }
+        }
+    }

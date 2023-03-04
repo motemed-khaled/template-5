@@ -1,0 +1,10 @@
+@include keyf(flash){
+    0%,60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        width: 120%;
+        height: 120%;
+    }
+}
